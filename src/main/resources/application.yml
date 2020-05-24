@@ -12,17 +12,17 @@ spring:
   datasource:
     druid:
       db1:
-        url: jdbc:mysql://120.79.18.7:32553/shop_jd_1?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true&useAffectedRows=true&autoReconnect=true&autoReconnectForPools=true
-        username: sms
-        password: Yeion#187.top
+        url: jdbc:mysql://127.0.0.1:3306/mybatis_plus_db1?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true&useAffectedRows=true&autoReconnect=true&autoReconnectForPools=true
+        username: root
+        password: 123456
         driver-class-name: com.mysql.cj.jdbc.Driver
         initialSize: 5
         minIdle: 5
         maxActive: 20
       db2:
-        url: jdbc:mysql://120.79.18.7:32553/shop_jd_2?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true&useAffectedRows=true&autoReconnect=true&autoReconnectForPools=true
-        username: sms
-        password: Yeion#187.top
+        url: jdbc:mysql://127.0.0.1:3306/mybatis_plus_db2?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true&useAffectedRows=true&autoReconnect=true&autoReconnectForPools=true
+        username: root
+        password: 123456
         driver-class-name: com.mysql.cj.jdbc.Driver
         initialSize: 5
         minIdle: 5
