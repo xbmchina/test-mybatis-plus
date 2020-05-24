@@ -1,0 +1,35 @@
+server:
+  port: 10099
+
+swagger:
+  enable: true
+
+
+spring:
+  aop:
+    proxy-target-class: true
+    auto: true
+  datasource:
+    druid:
+      db1:
+        url: jdbc:mysql://xxxxx:3306/shop_jd_1?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true&useAffectedRows=true&autoReconnect=true&autoReconnectForPools=true
+        username: xxxx
+        password: xxxx
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        initialSize: 5
+        minIdle: 5
+        maxActive: 20
+      db2:
+        url: jdbc:mysql://xxxxx:3306/shop_jd_2?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true&useAffectedRows=true&autoReconnect=true&autoReconnectForPools=true
+        username: xxxxx
+        password: xxxxx
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        initialSize: 5
+        minIdle: 5
+        maxActive: 20
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**.xml
+  type-aliases-package: com.example.testmybatisplus.entity
+  configuration:
+    map-underscore-to-camel-case: true
